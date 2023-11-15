@@ -19,6 +19,12 @@
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
 
+        <section id="menu">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/about' | relative_url }}" class="btn">About</a>
+          <a href="{{ '/blog' | relative_url }}" class="btn">Blog</a>
+          <a href="{{ '/contact' | relative_url }}" class="btn">Contact</a>
+        </section>
         <section id="downloads">
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="btn">Download as .zip</a>

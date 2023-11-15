@@ -3,3 +3,4 @@ plugins:
 - jekyll-remote-theme
 title: [CISA Reseach]
 description: [Cross-Input Signature Aggregation Research for Bitcoin]
+show_downloads: ["false"]
