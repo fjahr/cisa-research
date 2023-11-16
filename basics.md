@@ -6,6 +6,8 @@ layout: default
 
 ### General idea
 
+### Signature Aggregation != Key Aggregation
+
 ### History
 
 ### Half-Agg vs. Full-Agg
