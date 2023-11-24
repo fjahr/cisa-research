@@ -11,3 +11,15 @@ layout: default
 ### History
 
 ### Half-Agg vs. Full-Agg
+
+
+### Application
+
+
+### Upsides
+
+- Size/Space saving (Storage + Bandwidth)
+
+### Downsides
+
+- Common owner heuristic

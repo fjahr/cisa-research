@@ -51,3 +51,29 @@ in
 
 [2020-02-16 - SLP #149: Is Consumerism at odds with Privacy in Bitcoin? (Adam Gibson/Waxwing)](https://stephanlivera.com/episode/149/)
 - Summary
+
+### BitcoinStackexchange
+
+[What is the difference between key aggregation and signature aggregation?](https://bitcoin.stackexchange.com/questions/106163/what-is-the-difference-between-key-aggregation-and-signature-aggregation?noredirect=1&lq=1)
+
+[What is cross-input signature aggregation and how would it work?](https://bitcoin.stackexchange.com/questions/106241/what-is-cross-input-signature-aggregation-and-how-would-it-work)
+
+[What makes cross input signature aggregation complicated to implement?](https://bitcoin.stackexchange.com/questions/100216/what-makes-cross-input-signature-aggregation-complicated-to-implement?rq=1)
+
+[Would signature aggregation reduce the largest feasible blocksize](https://bitcoin.stackexchange.com/questions/84168/would-signature-aggregation-reduce-the-largest-feasible-blocksize?rq=1)
+
+[Why is full blockwide signature aggregation of schnorr signatures non-interactive?](https://bitcoin.stackexchange.com/questions/107198/why-is-full-blockwide-signature-aggregation-of-schnorr-signatures-non-interactiv?rq=1)
+
+[What block space savings would we get for coinjoins (and payjoins) if we had cross input signature aggregation?](https://bitcoin.stackexchange.com/questions/106224/what-block-space-savings-would-we-get-for-coinjoins-and-payjoins-if-we-had-cro)
+
+[Will cross-input signature aggregation need a new output type?](https://bitcoin.stackexchange.com/questions/106240/will-cross-input-signature-aggregation-need-a-new-output-type?rq=1)
+
+[How could Schnorr signatures be aggregated across the whole transaction?](https://bitcoin.stackexchange.com/questions/85833/how-could-schnorr-signatures-be-aggregated-across-the-whole-transaction?rq=1)
+
+[Can Schnorr aggregate signatures be nested inside other Schnorr aggregate signatures?](https://bitcoin.stackexchange.com/questions/110862/can-schnorr-aggregate-signatures-be-nested-inside-other-schnorr-aggregate-signat)
+
+[Why does blockwide signature aggregation prevent adaptor signatures?](https://bitcoin.stackexchange.com/questions/107196/why-does-blockwide-signature-aggregation-prevent-adaptor-signatures?rq=1)
+
+[Why is adding s values in half aggregation insecure?](https://bitcoin.stackexchange.com/questions/107199/why-is-adding-s-values-in-half-aggregation-insecure)
+
+[How does CoinJoin affect the total transaction size?](https://bitcoin.stackexchange.com/questions/54296/how-does-coinjoin-affect-the-total-transaction-size)

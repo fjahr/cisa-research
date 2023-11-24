@@ -4,6 +4,8 @@ layout: default
 
 ## Half Signature Aggregation
 
+### Application
+
 ### Code & BIPs
 
 [BIP Draft](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-aggregation.mediawiki)
