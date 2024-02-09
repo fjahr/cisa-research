@@ -6,13 +6,18 @@ layout: default
 
 This page contains resources on CISA that were considered valuable input for
 this website and may also be interesting content for anyone else interested
-in 
+in getting up to speed. However, keep in mind that some of the information
+may have been superseeded by newer research.
 
 ### Write-ups
 
-[Cross-Input Signature Aggregation by Blockstream Research](https://github.com/BlockstreamResearch/cross-input-aggregation)
+[(current) - Cross-Input Signature Aggregation by Blockstream Research](https://github.com/BlockstreamResearch/cross-input-aggregation)
 
 [2022-07-07 - Blockstream Research: Half-Aggregation of BIP 340 Signatures](https://blog.blockstream.com/half-aggregation-of-bip-340-signatures/)
+
+[2022-04-04 - Why does signature half aggregation break adaptor signatures? (Gijs van Dam)](https://www.gijsvandam.nl/post/why-does-signature-half-aggregation-break-adaptor-signatures/)
+
+[2020-08-17 - Taproot, CoinJoins, and Cross-Input Signature Aggregation (u/almkglor)](https://www.reddit.com/r/Bitcoin/comments/ibcnsv/taproot_coinjoins_and_crossinput_signature/)
 
 [2017-05-07 - bitcoin-dev ML: Per-block non-interactive Schnorr signature aggregation (Tadge)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014272.html)
 
@@ -28,29 +33,25 @@ in
 
 [2021-06-23 - Half-Aggregation Implementation in C - Live Coding (Jonas Nick & Tim Ruffing)](https://www.youtube.com/watch?v=Dns_9jaNPNk)
 
+[2018-01-24 - Schnorr signatures for Bitcoin: challenges and opportunities - BPASE '18 (Pieter Wuille)](https://youtu.be/oTsjMz3DaLs?si=IbJmI5RL1mxhJmeS&t=908)
+- [Transcript](https://diyhpl.us/wiki/transcripts/blockchain-protocol-analysis-security-engineering/2018/schnorr-signatures-for-bitcoin-challenges-opportunities/)
+
 ### Podcasts
 
 [2023-09-07 - Bitcoin Review #50: Libsecp Panel (Jonas Nick, Tim Ruffing, Lloyd Fournier, Jesse Posner & Rijndael)](https://bitcoin.review/podcast/episode-50/)
-- Content
-- Summary
+- [Transcript](https://btctranscripts.com/bitcoin-review-podcast/libsec-panel/)
 
 [2022-12-27 - Chaincode Podcast #27: Nesting, ROAST, Half-Aggregation, Adaptor Signatures (Pieter Wuille & Tim Ruffing - Part 2)](https://podcast.chaincode.com/2022/12/15/pieter-wuille-tim-ruffing-schnorr-musig-part1)
-- Summary
 
 [2022-12-15 - Chaincode Podcast #26: Schnorr, MuSig, FROST and more (Pieter Wuille & Tim Ruffing - Part 1)](https://podcast.chaincode.com/2022/12/15/pieter-wuille-tim-ruffing-schnorr-musig-part1)
-- Summary
 
 [2022-08-02 - SLP #400: Half Signature Aggregation (Jonas Nick & Tim Ruffing)](https://stephanlivera.com/episode/400/)
-- Summary
 
 [2021-11-16 - SLP #321: On-Chain Scaling (Pieter Wuille, Andrew Poelstra, Andrew Chow & Murch)](https://stephanlivera.com/episode/321/)
-- Summary
 
 [2021-10-21 - Unhashed Podcast #157: Choosing Sigs (Ruben Somsen et al)](https://www.spreaker.com/user/bitcoinpodcasts/unhash-157)
-- Summary
 
 [2020-02-16 - SLP #149: Is Consumerism at odds with Privacy in Bitcoin? (Adam Gibson/Waxwing)](https://stephanlivera.com/episode/149/)
-- Summary
 
 ### BitcoinStackexchange
 
