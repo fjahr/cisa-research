@@ -9,7 +9,7 @@ this website and may also be interesting content for anyone else interested
 in getting up to speed. However, keep in mind that some of the information
 may have been superseeded by newer research.
 
-### Write-ups
+### Write-ups/Mailing list
 
 [(current) - Cross-Input Signature Aggregation by Blockstream Research](https://github.com/BlockstreamResearch/cross-input-aggregation)
 
@@ -18,6 +18,8 @@ may have been superseeded by newer research.
 [2022-04-04 - Why does signature half aggregation break adaptor signatures? (Gijs van Dam)](https://www.gijsvandam.nl/post/why-does-signature-half-aggregation-break-adaptor-signatures/)
 
 [2020-08-17 - Taproot, CoinJoins, and Cross-Input Signature Aggregation (u/almkglor)](https://www.reddit.com/r/Bitcoin/comments/ibcnsv/taproot_coinjoins_and_crossinput_signature/)
+
+[2018-03-21 - bitcoin-dev ML: Soft-forks and schnorr signature aggregation (AJ Towns)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html)
 
 [2017-05-07 - bitcoin-dev ML: Per-block non-interactive Schnorr signature aggregation (Tadge)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014272.html)
 
