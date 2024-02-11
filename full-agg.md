@@ -4,25 +4,25 @@ layout: default
 
 ## Full Signature Aggregation
 
-Full-aggregation is an interactive process for aggregating a collection of signatures into a single aggregate signature. The resulting aggregate signature is of the same size as an unaggregated BIP 340 signature (constant).
+Full aggregation is an interactive process for aggregating a collection of signatures into a single aggregate signature. The resulting aggregate signature is of the same size as an unaggregated BIP 340 signature (constant).
 
 #### Key benefits
 
-- Space/Fee savings: A fully aggregated signature is of constant size, no matter how many signatures have been aggregated. The size is always 64 bytes, the same as a single BIP 340 signature. As part of a Bitcoin transaction the savings 26.1% in bytes and 9.6% in weight units ([assuming the historically average transaction](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org)). When comparing these numbers with the half-agg savings, they don't seem to differ too much but it should be noted that full-agg starts to shine the bigger the transaction gets. So the savings get particularly interesting for large coinjoins or consolidation transactions.
+- Space/Fee savings: A fully aggregated signature is of constant size, no matter how many signatures have been aggregated. The size is always 64 bytes, the same as a single BIP 340 signature. As part of a Bitcoin transaction the savings 26.1% in bytes and 9.6% in weight units ([assuming the historically average transaction](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org)). When comparing these numbers with the half-agg savings, they don't seem to differ too much, but it should be noted that full-agg starts to shine the bigger the transaction gets. So, the savings get particularly interesting for large coinjoins or consolidation transactions.
 
 ### Applications
 
 #### Block-wide full-agg
 
-While theoretically possible, there seems to be consensus among researchers that this is not a use-case worth persuing due to the interactivity needed among signers to produce a fully-aggregated signature. In any normally formed block that includes transactions relayed over the P2P network, this level of cooperation seems impossible to achieve.
+While theoretically possible, there seems to be consensus among researchers that this is not a use-case worth pursuing due to the interactivity needed among signers to produce a fully-aggregated signature. In any normally formed block that includes transactions relayed over the P2P network, this level of cooperation seems impossible to achieve.
 
 #### Tx-wide full-agg
 
-This is a feasible use-case for both transactions that produced by a single signer as well as transactions with multiple signers that collaborate in an interactive protocol. In the case of multiple signers, the protocol would need to be extended to accomodate the steps to aggregate the signatures of the transaction as well.
+This is a feasible use-case for both transactions that produced by a single signer as well as transactions with multiple signers that collaborate in an interactive protocol. In the case of multiple signers, the protocol would need to be extended to accommodate the steps to aggregate the signatures of the transaction as well.
 
 #### Gossip protocol bandwidth savings in Layer-2 protocols
 
-Similar to the block-wide full-agg scenario the example use-case [Aggregegation of Lightning Channel Announcements](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#sigagg-case-study-ln-channel-announcements) for this scenario seems to not be a good fit for full-agg due to the extensive interactivity needed the different signers.
+Similar to the block-wide full-agg scenario the example use-case [Aggregation of Lightning Channel Announcements](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#sigagg-case-study-ln-channel-announcements) for this scenario seems to not be a good fit for full-agg due to the extensive interactivity needed the different signers.
 
 ### Open issues
 
@@ -34,12 +34,12 @@ Additionally, to this date there has not been an multi-signature scheme develope
 
 #### Common-input-ownership heuristic (assuming tx-wide aggregation)
 
-This heuristic assumes that if a transaction that has more than one input, then all those inputs are probably owned by the same entity. Due to the interactivity constraints on full-agg signatures, this heuristic may be weighted heavier and this could lead to privacy implications for the users of such signatures in their transactions.
+This heuristic assumes that if a transaction that has more than one input, then all those inputs are probably owned by the same entity. Due to the interactivity constraints on full-agg signatures, this heuristic may be weighted heavier, and this could lead to privacy implications for the users of such signatures in their transactions.
 
 ### BIP
 
-No BIP has been drafted publicly to this date
+No BIP has been drafted publicly to this date.
 
 ### Code
 
-No implementation as code is currently known
+No implementation as code is currently known.

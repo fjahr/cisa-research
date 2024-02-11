@@ -4,11 +4,11 @@ layout: default
 
 ## Deployment
 
-There are multiple paths that could theoretically be used to introduce CISA to Bitcoin. It has been pointed out [here](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html) and [here](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#integration-into-the-bitcoin-protocol) that a new Segwit version may be the safest option but more research is needed.
+There are multiple paths that could theoretically be used to introduce CISA to Bitcoin. It has been pointed out [here](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html) and [here](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#integration-into-the-bitcoin-protocol) that a new Segwit version may be the safest option, but more research is needed.
 
 ## Related Proposals
 
-A few proposals for Bitcoin consensus changes make use signature aggregation. In the spirit of Taproot, which included multiple changes/BIPs that could have been deployed seperately, it is interesting to keep an eye on these proposals and investigate if it may be interesting to integrate them into a wider proposal.
+A few proposals for Bitcoin consensus changes make use of signature aggregation. In the spirit of Taproot, which included multiple changes/BIPs that could have been deployed separately, it is interesting to keep an eye on these proposals and investigate if it may be interesting to integrate them into a wider proposal.
 
 ### Graftroot
 

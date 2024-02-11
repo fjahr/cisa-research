@@ -22,5 +22,5 @@ You found false or outdated information on this website? Please open an issue or
 
 - BIP draft
 - Implementation
-- Interacte signature scheme
+- Interactive signature scheme
 

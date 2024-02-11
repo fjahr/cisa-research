@@ -12,7 +12,7 @@ The [BIP draft abstract](https://github.com/BlockstreamResearch/cross-input-aggr
 - Non-interactivity: Aggregation process does not require any cooperation between signers or signers and the aggregating party
 - Combination with full-agg: Signatures that are results of a full-agg process can be further aggregated with half-agg, leading to even higher savings
 
-#### Current status
+#### Status
 
 A BIP draft has been written for the aggregatio process of BIP 340 signatures. Several possible applications have been proposed but also soveral open issues remain. Several implementations have been written but all of them require further review.
 
@@ -42,21 +42,21 @@ Particularly the [aggregegation of Lightning Channel Announcements](https://gith
 
 If you need a refresher: A good definition of Adaptor Signatures is [available on the Bitcoin Optech website](https://bitcoinops.org/en/topics/adaptor-signatures/).
 
-When used for block-wide signature aggregation in the most naive way, adoptor signatures used in transactions in that block would not be usable anymore, meaning their secret values could not be retrieved. This could potentially break several protocols that are using adaptor signatures today, such as Atomic Swaps and DLCs for example. A more detailed explanation is [available here](https://www.gijsvandam.nl/post/why-does-signature-half-aggregation-break-adaptor-signatures/).
+When used for block-wide signature aggregation in the naivest way, adoptor signatures used in transactions in that block would not be usable anymore, meaning their secret values could not be retrieved. This could potentially break several protocols that are using adaptor signatures today, such as Atomic Swaps and DLCs for example. A more detailed explanation is [available here](https://www.gijsvandam.nl/post/why-does-signature-half-aggregation-break-adaptor-signatures/).
 
-There are certain scenarios where adaptor sigs are used that are not broken by block-wide half-agg or that can still be feasible by extending the protocol with script spend paths, [some of such examples are described here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-agg-and-adaptor-sigs.md). However, there currently is no comprehensive list of protocols and their specific implementation that are affected and also not a clear plan on how to deal with this issue.
+There are certain scenarios where adaptor sigs are used that are not broken by block-wide half-agg or that can still be feasible by extending the protocol with script spend paths, [some of such examples are described here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-agg-and-adaptor-sigs.md). However, there currently is no comprehensive list of protocols and their specific implementation that are affected and not a clear plan on how to deal with this issue.
 
 #### Reorgs and block-wide half-agg (assuming block-wide aggregation)
 
 In current bitcoin node implementations, transactions are typically removed from the mempool once a block has been found that includedd this particular transaction. This is ok because if this particular block is reorged out of the best chain and the new chain doesn't contain any transactions from the first block, these transactions can be recovered from the block and be put back into the mempool.
 
-This property is lost with block-wide half-agg. When the transactions are removed from the mempool and only a block with one aggregate signature remains, none of the included transactions can be recovered from this block. What follows is that a different solution needs to be found for this issue, namely a reorg-pool that keeps transactions for as long as the block is still considered in danger to be re-orged. Otherwise the original broadcaster of the transactions would need to watch and rebroadcast in such a scenario. In theory this could also be outsourced to a watchtower serverice.
+This property is lost with block-wide half-agg. When the transactions are removed from the mempool and only a block with one aggregate signature remains, none of the included transactions can be recovered from this block. What follows is that a different solution needs to be found for this issue, namely a reorg-pool that keeps transactions for as long as the block is still considered in danger to be re-orged. Otherwise, the original broadcaster of the transactions would need to watch and rebroadcast in such a scenario. In theory this could also be outsourced to a watchtower serverice.
 
 This issue is also [described in a little more detail here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/README.md#half-aggregation-and-reorgs).
 
 ### BIP
 
-There is a draft BIP available for the half-aggregation process of BIP 340 signatures. There are currently no BIPs proposed for it's integration into the Bitcoin protocol.
+There is a draft BIP available for the half-aggregation process of BIP 340 signatures. There are currently no BIPs proposed for its integration into the Bitcoin protocol.
 
 [Draft: Half-aggregation of BIP 340 signatures](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-aggregation.mediawiki)
 
