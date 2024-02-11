@@ -38,7 +38,7 @@ Particularly the [aggregegation of Lightning Channel Announcements](https://gith
 
 ### Open issues
 
-#### Adoptor Signatures/Scriptless Scripts and block-wide half-agg
+#### Adoptor Signatures/Scriptless Scripts and block-wide half-agg (assuming block-wide aggregation)
 
 If you need a refresher: A good definition of Adaptor Signatures is [available on the Bitcoin Optech website](https://bitcoinops.org/en/topics/adaptor-signatures/).
 
@@ -46,7 +46,7 @@ When used for block-wide signature aggregation in the most naive way, adoptor si
 
 There are certain scenarios where adaptor sigs are used that are not broken by block-wide half-agg or that can still be feasible by extending the protocol with script spend paths, [some of such examples are described here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-agg-and-adaptor-sigs.md). However, there currently is no comprehensive list of protocols and their specific implementation that are affected and also not a clear plan on how to deal with this issue.
 
-#### Reorgs and block-wide half-agg
+#### Reorgs and block-wide half-agg (assuming block-wide aggregation)
 
 In current bitcoin node implementations, transactions are typically removed from the mempool once a block has been found that includedd this particular transaction. This is ok because if this particular block is reorged out of the best chain and the new chain doesn't contain any transactions from the first block, these transactions can be recovered from the block and be put back into the mempool.
 
