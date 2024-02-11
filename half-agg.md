@@ -2,21 +2,39 @@
 layout: default
 ---
 
-## Half Signature Aggregation
+## Half Signature Aggregation (half-agg)
 
-- size half of normal sigs
-    - https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org
-    - alone: 20.6% bytes but only 7.6% weight units
-    - average transaction
-- non-interactive
+The [BIP draft abstract](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-aggregation.mediawiki#abstract) provides a nice summary: "Half-aggregation is a non-interactive process for aggregating a collection of signatures into a single aggregate signature. The size of the resulting aggregate signature is approximately half of the combined size of the original signatures."
+
+#### Key benefits
+
+- Space/Fee savings: Compared to a set of BIP 340 signatures which are 64 bytes each, a half-aggregate of these signatures would 32*n + 32 bytes. As part of a Bitcoin transaction the savings are 20.6% in terms of bytes and 7.6% in terms of weight units ([assuming the historically average transaction](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org))
+- Non-interactivity: Aggregation process does not require any cooperation between signers or signers and the aggregating party
+- Combination with full-agg: Signatures that are results of a full-agg process can be further aggregated with half-agg, leading to even higher savings
+
+#### Current status
+
+A BIP draft has been written for the aggregatio process of BIP 340 signatures. Several possible applications have been proposed but also soveral open issues remain. Several implementations have been written but all of them require further review.
 
 ### Applications
 
-- Block-wide signature aggregation
-- Tx-wide signature aggregation
-    - 
-- Gossip protocol bandwidth savings in Layer-2 protocols
-  - [Aggregegation of Lightning Channel Announcements](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#sigagg-case-study-ln-channel-announcements)
+The [motivation section](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-aggregation.mediawiki#motivation) in the half-agg BIP draft lays out applications in a bit more detail, below is a summary of the key points.
+
+#### Block-wide half-agg
+
+Aggregating all BIP 340 signatures in a block into a single half-agg signature. This seems like a good fit since half-agg does not require any interactivity among the participants (which would be all transactions creators in the block). There would still be significant issues required to address for this use-case, such as handling reorgs and adaptor signatures (see Open issues section).
+
+#### Tx-wide half-agg
+
+Aggregating all BIP 340 signatures in a single transactions into one half-agg signature.
+
+This is possible without a doubt and might even be the easiest to implement protocol level use of half-agg signatures. However, many researchers at the same time ask: why not use full-agg for this particular use case? Given that the creation of a transaction among multiple participants always requires some sort of cooperation, it is reasonable to assume that these protocols could handle additional interactivity required for the aggregation of their signatures.
+
+Aggregating signatures in transactions was also discussed as part of [Graftroot](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-February/015700.html) and could be part of other proposals that require verification of multiple signatures.
+
+#### Gossip protocol bandwidth savings in Layer-2 protocols
+
+Particularly the [aggregegation of Lightning Channel Announcements](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#sigagg-case-study-ln-channel-announcements) is discussed as [part of the BIP draft](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-aggregation.mediawiki#motivation). Since new channels are announced to the whole network via the gossip protocol and these announcements are batched already, the signatures that are part of these announcements could be aggregated to save bandwidth.
 
 ### Open issues
 
@@ -32,7 +50,7 @@ There are certain scenarios where adaptor sigs are used that are not broken by b
 
 In current bitcoin node implementations, transactions are typically removed from the mempool once a block has been found that includedd this particular transaction. This is ok because if this particular block is reorged out of the best chain and the new chain doesn't contain any transactions from the first block, these transactions can be recovered from the block and be put back into the mempool.
 
-This property is lost with block-wide half-agg. When the transactions are removed from the mempool and only a block with one aggregate signature remains, none of the included transactions can be recovered from this block. What follows is that a different solution needs to be found for this issue, namely a reorg-pool that keeps transactions for as long as the block is still considered in danger to be re-orged. Otherwise the original broadcaster of the transactions would need to watch and rebroadcast in such a scenario. Potentially this could also be outsourced to a watchtower serverice.
+This property is lost with block-wide half-agg. When the transactions are removed from the mempool and only a block with one aggregate signature remains, none of the included transactions can be recovered from this block. What follows is that a different solution needs to be found for this issue, namely a reorg-pool that keeps transactions for as long as the block is still considered in danger to be re-orged. Otherwise the original broadcaster of the transactions would need to watch and rebroadcast in such a scenario. In theory this could also be outsourced to a watchtower serverice.
 
 This issue is also [described in a little more detail here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/README.md#half-aggregation-and-reorgs).
 
