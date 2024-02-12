@@ -19,9 +19,15 @@ may have been superseeded by newer research.
 
 [2020-08-17 - Taproot, CoinJoins, and Cross-Input Signature Aggregation (u/almkglor)](https://www.reddit.com/r/Bitcoin/comments/ibcnsv/taproot_coinjoins_and_crossinput_signature/)
 
-[2018-03-21 - bitcoin-dev ML: Soft-forks and schnorr signature aggregation (AJ Towns)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html)
+[2019-11-21 - Entroot (sipa)](https://gist.github.com/sipa/ca1502f8465d0d5032d9dd2465f32603)
 
-[2017-05-07 - bitcoin-dev ML: Per-block non-interactive Schnorr signature aggregation (Tadge)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014272.html)
+[2018-07-31 - Generalized Taproot/G'root (AJ Towns)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016249.html)
+
+[2018-03-21 - Soft-forks and schnorr signature aggregation (AJ Towns)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html)
+
+[2018-02-05 - Graftroot (Greg Maxwell)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-February/015700.html)
+
+[2017-05-07 - Per-block non-interactive Schnorr signature aggregation (Tadge)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014272.html)
 
 [2017-03-23 - bitcoincore.org: Roadmap for Schnorr Signatures](https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/#signature-aggregation)
 
