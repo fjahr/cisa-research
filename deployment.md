@@ -4,7 +4,7 @@ layout: default
 
 ## Deployment
 
-There are multiple paths that could theoretically be used to introduce CISA to Bitcoin. It has been pointed out [here](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html) and [here](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#integration-into-the-bitcoin-protocol) that a new Segwit version may be the safest option, but more research is needed.
+There are multiple paths that could theoretically be used to introduce CISA to Bitcoin. It has been pointed out [here](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-March/015838.html) and [here](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master?tab=readme-ov-file#integration-into-the-bitcoin-protocol) that a new Segwit version may be the safest option, but more research is welcome and needed before a proposal can be formalized.
 
 ## Related Proposals
 

@@ -7,7 +7,7 @@ layout: default
 This page contains resources on CISA that were considered valuable input for
 this website and may also be interesting content for anyone else interested
 in getting up to speed. However, keep in mind that some of the information
-may have been superseeded by newer research.
+linked here may have been superseeded by newer research already.
 
 ### Write-ups/Mailing list
 
