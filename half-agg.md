@@ -109,15 +109,15 @@ This issue is also [described in a little more detail here](https://github.com/B
 ### BIP
 
 There is a draft BIP available for the half-aggregation process of BIP 340
-signatures. There are currently no BIPs proposed for its integration into the
-Bitcoin protocol.
+signatures. There are currently no known BIPs or draft proposals for its
+integration into the Bitcoin protocol.
 
 [Draft: Half-aggregation of BIP 340 signatures](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/half-aggregation.mediawiki)
 
 ### Code
 
-There are currently three implementations available of the half-aggregation
-process.
+There are currently three implementations of the half-aggregation
+process available.
 
 [hacspec implementation (reference implementation of the BIP draft)](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master/hacspec-halfagg)
 
