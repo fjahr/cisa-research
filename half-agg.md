@@ -68,8 +68,7 @@ these announcements could be aggregated to save bandwidth.
 
 ### Open issues
 
-#### Adoptor Signatures/Scriptless Scripts and block-wide half-agg (assuming
-block-wide aggregation)
+#### Adoptor Signatures/Scriptless Scripts and block-wide half-agg (assuming block-wide aggregation)
 
 If you need a refresher: A good definition of Adaptor Signatures is [available
 on the Bitcoin Optech website](https://bitcoinops.org/en/topics/adaptor-signatures/).

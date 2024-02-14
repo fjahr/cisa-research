@@ -2,14 +2,14 @@
 layout: default
 ---
 
-## Welcome CISA friends!
+### Welcome CISA friends!
 
 This website aims to reflect the current state of research into applying
 cross-input signature aggregation to Bitcoin and related protocols. It also
 maintains a list of open tasks that contributors interested in the topic can
 apply themselves to.
 
-## Overview of Cross-Input Signature Aggregation
+## Overview
 
 This page gives a very high-level overview of CISA before diving deeper into
 the different topics in the rest of the pages on this website.
