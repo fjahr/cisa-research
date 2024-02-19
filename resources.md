@@ -61,6 +61,10 @@ linked here may have been superseeded by newer research already.
 
 [2020-02-16 - SLP #149: Is Consumerism at odds with Privacy in Bitcoin? (Adam Gibson/Waxwing)](https://stephanlivera.com/episode/149/)
 
+### Meeting Transcripts
+
+[2023-09-21 - CoreDev Tech Meeting: Signature Aggregation Update](https://btctranscripts.com/bitcoin-core-dev-tech/2023-09/signature-aggregation/)
+
 ### Bitcoin Stack Exchange
 
 [What is the difference between key aggregation and signature aggregation?](https://bitcoin.stackexchange.com/questions/106163/what-is-the-difference-between-key-aggregation-and-signature-aggregation?noredirect=1&lq=1)
