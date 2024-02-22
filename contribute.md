@@ -25,7 +25,7 @@ or a PR on [GitHub](https://github.com/fjahr/cisa-research)!
 
 ### Full-agg
 
-- Develop an interactive signature scheme compatible with Bitcoin
+- Develop an interactive signature scheme compatible with Bitcoin that is provably secure
 - Draft a BIP
 - Draft an implementation
 

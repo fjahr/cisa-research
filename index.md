@@ -16,10 +16,12 @@ the different topics in the rest of the pages on this website.
 
 ### Schnorr linearity property
 
-Schnorr signatures have a linearity property that allows aggregation of these
-signatures. Since the Taproot softfork activation in 2021, Schnorr signatures
-can be used in Bitcoin which opens the door to aggregate signatures of such
-transactions.
+Schnorr signatures have a linearity property that allows for simpler
+aggregation of such
+signatures when compared to their ECDSA counterparts. Since the Taproot
+softfork activation in 2021, Schnorr signatures
+can be used in Bitcoin which opens the door to proposals that could allow
+usage of aggregate signatures in the Bitcoin protocol in the future.
 
 ### History
 
@@ -33,9 +35,12 @@ of the proposal manageable.
 A common misconception or source of confusion among bitcoiners new to this
 topic is how CISA relates to another topic that has been under static
 development throughout the past years: MuSig. This [question was answered thoroughly on Bitcoin Stack Exchange](https://bitcoin.stackexchange.com/questions/106163/what-is-the-difference-between-key-aggregation-and-signature-aggregation),
-here is just a short summary: MuSig is not just aggregating signatures but
-also keys, hence this process is correctly called Key Aggregation. CISA
-referrs to only the aggregation of signatures. Aside from a different result,
+here is just a short summary: With MuSig the keys are aggregated to a single
+key and this single keys signs a single message, hence this process is more
+concretely called Key Aggregation. In a CISA context there are different keys
+that sign a different message each but their signatures are still aggregated.
+Aside from a different result (1 key, 1 message, 1 signature vs. n keys, n
+messages, 1 signature),
 process-wise the primary difference is that MuSig must be performed already
 during address creation while CISA can be done at signing time or even later
 depending on which flavor is used.

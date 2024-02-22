@@ -58,6 +58,16 @@ developed and suggested for the full-agg use case in Bitcoin transactions in
 particular. [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
 can provide a starting point but more work has to be invested.
 
+The following properties are desirable when it comes to this multi-signature
+scheme:
+
+- Provably secure
+- Allow duplicate public keys
+- Does not require proofs-of-possession
+- Works with schemes like Taproot Tweaking and MuSig
+- Two rounds like musig
+- Batch verifiable
+
 #### Common-input-ownership heuristic (assuming tx-wide aggregation)
 
 This heuristic assumes that if a transaction that has more than one input, then
