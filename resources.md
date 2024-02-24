@@ -37,6 +37,8 @@ linked here may have been superseeded by newer research already.
 
 [2021-03-22 - Non-interactive half-aggregation of EdDSA and variants of Schnorr signatures (Konstantinos Chalkias, Francois Garillot, Yashvanth Kondi & Valeria Nikolaenko)](https://eprint.iacr.org/2021/350)
 
+[2018-05-20 - Simple Schnorr Multi-Signatures with Applications to Bitcoin (Gregory Maxwell, Andrew Poelstra, Yannick Seurin & Pieter Wuille)](https://eprint.iacr.org/2018/068.pdf)
+
 ### Videos
 
 [2021-06-23 - Half-Aggregation Implementation in C - Live Coding (Jonas Nick & Tim Ruffing)](https://www.youtube.com/watch?v=Dns_9jaNPNk)
