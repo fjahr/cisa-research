@@ -10,6 +10,15 @@ and [here](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/m
 that a new Segwit version may be the safest option, but more research is welcome
 and needed before a proposal can be formalized.
 
+### Soft fork requirement and security considerations
+
+Activation of CISA, no matter in which form, requires a soft fork since it adds
+a new verification algorithm. This has serious security implications. Bitcoin
+can only be as secure as the weakest of its verification algorithms and should
+spending with aggregate signatures turn out to be vulnerable, this would also
+put all funds that can be spent with Schnorr signatures at risk even if Schnorr
+signatures themselves remain secure.
+
 ## Related Proposals
 
 A few proposals for Bitcoin consensus changes make use of signature aggregation.

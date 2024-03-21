@@ -21,14 +21,6 @@ is of the same size as an unaggregated BIP 340 signature (constant).
 
 ### Applications
 
-#### Block-wide full-agg
-
-While theoretically possible, there seems to be consensus among researchers that
-this is not a use-case worth pursuing due to the interactivity needed among
-signers to produce a fully-aggregated signature. In any normally formed block
-that includes transactions relayed over the P2P network, this level of
-cooperation seems impossible to achieve.
-
 #### Tx-wide full-agg
 
 This is a feasible use-case for both transactions that produced by a single
@@ -36,6 +28,17 @@ signer as well as transactions with multiple signers that collaborate in an
 interactive protocol. In the case of multiple signers, the protocol would need
 to be extended to accommodate the steps to aggregate the signatures of the
 transaction as well.
+
+Additionally, a partial full aggregation, i.e. aggregation of the signatures
+of a subset of the inputs in a transaction, is also possible.
+
+#### Block-wide full-agg
+
+While this is theoretically possible, for any normally formed block
+that includes transactions relayed over the P2P network, the level of
+cooperation between all the signers is impossible to achieve. Due to this,
+there appears to be consensus among researchers that this is not a use-case
+worth pursuing.
 
 #### Gossip protocol bandwidth savings in Layer-2 protocols
 
@@ -49,14 +52,15 @@ interactivity needed the different signers.
 
 As previously noted, the forming of a full-agg signature requires an interactive
 process. Interactivity adds tremendous amounts of complexity to any protocol ([great talk on this subject](https://www.youtube.com/watch?v=uI15RKnyX_E)).
+For example, all signers need to be online at signing time.
 Existing protocols that want to integrate full-agg signature aggregation will
 need to implement and handle this complexity in the future, including newly
 introduced failure scenarios, privacy implications etc.
 
 Additionally, to this date there has not been an multi-signature scheme
 developed and suggested for the full-agg use case in Bitcoin transactions in
-particular. [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
-can provide a starting point but more work has to be invested.
+particular. MuSig2 and [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
+can provide a starting point but more research is needed.
 
 The following properties are desirable when it comes to this multi-signature
 scheme:
@@ -67,6 +71,10 @@ scheme:
 - Works with schemes like Taproot Tweaking and MuSig
 - Two rounds like musig
 - Batch verifiable
+
+To be clear, just on a theoretical level there is not even a paper released
+that tackles these goals. But comparison, half-agg is already in a far better
+further developed in this regard.
 
 #### Common-input-ownership heuristic (assuming tx-wide aggregation)
 
