@@ -108,9 +108,9 @@ this could also be outsourced to a watchtower serverice.
 
 This issue is also [described in a little more detail here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/README.md#half-aggregation-and-reorgs).
 
-#### Theoretical security proof
+#### Mathematical security proof
 
-While Schnorr signatures are proovably secure under just the Random Oracle Model (ROM),
+While Schnorr signatures are proovably secure just in the Random Oracle Model (ROM),
 half-agg require both the ROM and the Algebraic Group Model (AGM). While this
 probably not an issue in practice it would be great if AGM was not needed. For now
 this just means that this would not be as conservative of an update as Schnorr

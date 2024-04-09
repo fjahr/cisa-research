@@ -37,8 +37,7 @@ of a subset of the inputs in a transaction, is also possible.
 While this is theoretically possible, for any normally formed block
 that includes transactions relayed over the P2P network, the level of
 cooperation between all the signers is impossible to achieve. Due to this,
-there appears to be consensus among researchers that this is not a use-case
-worth pursuing.
+there appears to be consensus that this is not a use-case worth pursuing.
 
 #### Gossip protocol bandwidth savings in Layer-2 protocols
 
@@ -57,13 +56,11 @@ Existing protocols that want to integrate full-agg signature aggregation will
 need to implement and handle this complexity in the future, including newly
 introduced failure scenarios, privacy implications etc.
 
-Additionally, to this date there has not been an multi-signature scheme
-developed and suggested for the full-agg use case in Bitcoin transactions in
-particular. MuSig2 and [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
-can provide a starting point but more research is needed.
+To this date no scheme for full-agg has been developed. But such
+a schemes will use similar ideas as MuSig2 and [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
+although it is otherwise not related to multisigs.
 
-The following properties are desirable when it comes to this multi-signature
-scheme:
+The following properties are desirable when it comes to a full-agg scheme:
 
 - Provably secure
 - Allow duplicate public keys
@@ -73,7 +70,7 @@ scheme:
 - Batch verifiable
 
 To be clear, just on a theoretical level there is not even a paper released
-that tackles these goals. But comparison, half-agg is already in a far better
+that tackles these goals. In comparison, half-agg is already in a far better
 further developed in this regard.
 
 #### Common-input-ownership heuristic (assuming tx-wide aggregation)
