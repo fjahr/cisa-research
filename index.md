@@ -46,7 +46,7 @@ the verifier needs. The verification API is like this:
 `bool VerifyMultisig(msg, agg_pk)`. In other words, the the verifier does
 not need to know who's behind agg_pk.
 
-In a CISA context there are different keys
+In a CISA context, there are different keys
 that sign a different message, a different input in the
 transactions, but their signatures are still aggregated. Given
 `(n pairs (public key, message)`:
@@ -74,18 +74,18 @@ have different interfaces.
 
 There are two flavors of CISA whose trade-offs need to be evaluated and
 contrasted to come to the best possible application for each of them. On a very
-high level their key differences are: 1. Space savings: half-agg saves up to
+high level their key differences are 1. Space savings: half-agg saves up to
 almost half the space of the aggregated signatures while the result of full-agg
 is the same size as one single signature. 2. Interactivity: full-agg requires
 interaction between the signers at signing time while half-agg does not.
 
 Additionally, it should be noted that both techniques can be combined, meaning
 the result signature of full-agg can be further aggregated with other signatures
-using half-agg post signing time if when interactivity is prohibited.
+using half-agg post-signing time if when interactivity is prohibited.
 
 ### Applications
 
-As part of the Bitcoin protocol CISA can be be both used to aggregate signatures
+As part of the Bitcoin protocol CISA can be both used to aggregate signatures
 of a single transaction, a set of transactions as well as even a whole block.
 Furthermore, CISA can also be used to aggregate signatures used in
 off-chain/layer-2 protocols that rely on signatures, for example the gossip

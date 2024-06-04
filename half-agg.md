@@ -16,7 +16,7 @@ size of the original signatures."
   each, a half-aggregate of these signatures would 32*n + 32 bytes. As part of
   a Bitcoin transaction the savings are 20.6% in terms of bytes and 7.6% in
   terms of weight units ([assuming the historically average transaction](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/savings.org))
-- Non-interactivity: Aggregation process does not require any cooperation
+- Non-interactivity: The aggregation process does not require any cooperation
   between signers or with the aggregating party. This means that there is no
   requirement for signers to be online and signatures can be aggregated by
   other network participants, like broadcasting nodes or miners.
@@ -25,8 +25,8 @@ size of the original signatures."
 
 #### Status
 
-A BIP draft has been written for the aggregatio process of BIP 340 signatures.
-Several possible applications have been proposed but also soveral open issues
+A BIP draft has been written for the aggregation process of BIP 340 signatures.
+Several possible applications have been proposed but also several open issues
 remain. Several implementations have been written but all of them require
 further review.
 
@@ -57,7 +57,7 @@ signatures.
 Aggregating all BIP 340 signatures in a block into a single half-agg signature.
 This seems like a good fit since half-agg does not require any interactivity
 among the participants (which would be all transactions creators in the block).
-There would still be significant issues required to address for this use-case,
+However, there are still significant issues that need to be addressed for this use-case,
 such as handling reorgs and adaptor signatures (see Open issues section).
 
 #### Gossip protocol bandwidth savings in Layer-2 protocols
@@ -91,7 +91,7 @@ with this issue.
 #### Reorgs and block-wide half-agg (assuming block-wide aggregation)
 
 In current bitcoin node implementations, transactions are typically removed
-from the mempool once a block has been found that includedd this particular
+from the mempool once a block has been found that included this particular
 transaction. This is ok because if this particular block is reorged out of the
 best chain and the new chain doesn't contain any transactions from the first
 block, these transactions can be recovered from the block and be put back into
@@ -104,15 +104,15 @@ is that a different solution needs to be found for this issue, namely a
 reorg-pool that keeps transactions for as long as the block is still considered
 in danger to be re-orged. Otherwise, the original broadcaster of the
 transactions would need to watch and rebroadcast in such a scenario. In theory
-this could also be outsourced to a watchtower serverice.
+this could also be outsourced to a watchtower service.
 
 This issue is also [described in a little more detail here](https://github.com/BlockstreamResearch/cross-input-aggregation/blob/master/README.md#half-aggregation-and-reorgs).
 
 #### Mathematical security proof
 
-While Schnorr signatures are proovably secure just in the Random Oracle Model (ROM),
+While Schnorr signatures are provably secure just in the Random Oracle Model (ROM),
 half-agg require both the ROM and the Algebraic Group Model (AGM). While this
-probably not an issue in practice it would be great if AGM was not needed. For now
+probably not an issue in practice it would be great if AGM was not needed. For now,
 this just means that this would not be as conservative of an update as Schnorr
 signatures themselves.
 

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Full Signature Aggregation
+## Full Signature Aggregation (full-agg)
 
 Full aggregation is an interactive process for aggregating a collection of
 signatures into a single aggregate signature. The resulting aggregate signature
@@ -57,7 +57,7 @@ need to implement and handle this complexity in the future, including newly
 introduced failure scenarios, privacy implications etc.
 
 To this date no scheme for full-agg has been developed. But such
-a schemes will use similar ideas as MuSig2 and [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
+a scheme will use similar ideas as MuSig2 and [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
 although it is otherwise not related to multisigs.
 
 The following properties are desirable when it comes to a full-agg scheme:
@@ -70,7 +70,7 @@ The following properties are desirable when it comes to a full-agg scheme:
 - Batch verifiable
 
 To be clear, just on a theoretical level there is not even a paper released
-that tackles these goals. In comparison, half-agg is already in a far better
+that tackles these goals. In comparison, half-agg is already much
 further developed in this regard.
 
 #### Common-input-ownership heuristic (assuming tx-wide aggregation)
