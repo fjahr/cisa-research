@@ -65,6 +65,8 @@ linked here may have been superseeded by newer research already.
 
 ### Meeting Transcripts
 
+[2016-05-22 - CoreDev Tech Meeting Zurich](https://bitcoincore.org/logs/2016-05-zurich-meeting-notes.html)
+
 [2023-09-21 - CoreDev Tech Meeting: Signature Aggregation Update](https://btctranscripts.com/bitcoin-core-dev-tech/2023-09/signature-aggregation/)
 
 ### Bitcoin Stack Exchange
