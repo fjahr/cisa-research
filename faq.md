@@ -15,8 +15,7 @@ layout: default
   In a future where CISA is widely adopted, using CoinJoins may also be widely adopted and
   even be considered the default to interact with Bitcoin on-chain.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <!--
 <details>
@@ -39,8 +38,7 @@ layout: default
 
   * Historically the average transaction per https://transactionfee.info/ included 2.73 inputs and 2.8 outputs.
 
-<br><br>
-</details>
+<br><br></details><br>
 -->
 
 <details>
@@ -59,8 +57,7 @@ layout: default
   is not difficult, so this should not be a blocker. This means CISA could provide some additional
   momentum for adoption of a newer default script type.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>Could CISA, if adopted widely, reduce the effectiveness of chain analysis?</summary><br>
@@ -79,8 +76,7 @@ layout: default
   incentives for using these protocols from purely motivated by privacy to a combination of privacy
   and savings.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>Could CISA pave the way for cheaper transactions in a high-fee environment?</summary><br>
@@ -92,8 +88,7 @@ layout: default
   adoption this should lead to a lower overall fee level since the space savings that CISA bring
   also mean more transactions can end up in a block.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>Could CISA lower the minimum economically spendable account at a given fee rate?</summary><br>
@@ -101,8 +96,7 @@ layout: default
   Yes, UTXOs that are spendable with CISA can be consolidated at lower costs than output types
   that can not use CISA.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>Could CISA help exchanges by, for example, saving them money while they consolidate small UTXOs?</summary><br>
@@ -111,8 +105,7 @@ layout: default
   impact from signature aggregation because they consist of a lot of inputs, which means they
   also have a lot of signatures that would cause extra fees when compared to a CISA transaction.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>How does CISA compare to other aggregation strategies?</summary><br>
@@ -122,8 +115,7 @@ layout: default
   <a href="https://cisaresearch.org/#signature-aggregation--key-aggregation-eg-musig-frost">specific section on this topic.</a>
   for more details.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <!--
 <details>
@@ -133,16 +125,14 @@ layout: default
   - Lightning no, musig use case
   - eCash no
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>How might CISA protect the social and legal choice of Bitcoin users and businesses to CoinJoin, and the likelihood of more CoinJoin behavior, if users could state (if asked) that their decision was based on saving money, not simply seeking more privacy?</summary><br>
 
   TBD
 
-<br><br>
-</details>
+<br><br></details><br>
 -->
 
 <details>
@@ -152,16 +142,14 @@ layout: default
   the different aspects that such a proposal could include and will have details on the proposal
   as soon as it is available.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>How would SegWit need to change to integrate CISA?</summary><br>
 
   The most likely way to deploy CISA would be with a softfork via a new SegWit version.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>Could CISA be packaged with (and might it be mutually beneficial with) any existing softfork convent proposals?</summary><br>
@@ -170,8 +158,7 @@ layout: default
   deployment and signalling mechanism could work for all proposals as a whole or for each 
   proposal individually.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>Would CISA have any impact on output destruction versus creation? How would implementation relate to the witness discount?</summary><br>
@@ -184,8 +171,7 @@ layout: default
   the transaction. The discount thus softens the fee savings effect of CISA. This is also the
   reason that the space savings of CISA are different from the space savings.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>How problematic would the interactive nature of full aggregate CISA be? What strategies might be adopted to ameliorate this?</summary><br>
@@ -202,8 +188,7 @@ layout: default
   the effort that will have to go into wallets and other apps that want to utilize full-agg CISA
   in an interactive protocol context.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>What would be the main downsides and risks of bringing CISA to Bitcoin?</summary><br>
@@ -220,8 +205,7 @@ layout: default
   second risk is related to this: In transactions generally the common input heuristic would probably
   considered to be stronger than today for any transaction with a fully aggregated signature.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>How would a CISA-powered for-profit service that could help people save money on fees, if they are willing to enter an interactive pool, work?</summary><br>
@@ -231,8 +215,7 @@ layout: default
   be dropped by such a service, probably leading to further (but minor) additional fee savings and
   higher ease of use for its users.
 
-<br><br>
-</details>
+<br><br></details><br>
 
 <details>
   <summary>What other kinds of CISA-powered apps can be envisioned?</summary><br>
@@ -246,5 +229,4 @@ layout: default
   <li>A batching server that batches PBST signed with SINGLE|ANYONECANPAY sig hash could utilize half-aggregation to save fees for its users</li>
   </ul>
 
-<br><br>
-</details>
+<br><br></details><br>
