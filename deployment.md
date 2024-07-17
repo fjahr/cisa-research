@@ -48,5 +48,5 @@ BLS signatures use a different hashing algorithm that hashes directly to a ellip
 OWAS is a concept for arriving at one signature per block by using BLS signatures described in a paper from 2013 by an anonymous author.
 
 [BLS paper](https://www.iacr.org/archive/asiacrypt2001/22480516.pdf)
-<br />
+
 [OWAS paper](https://download.wpsoftware.net/bitcoin/wizardry/horasyuanmouton-owas.pdf)
