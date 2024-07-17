@@ -40,3 +40,13 @@ overhead minimal.
 Improvement of Graftroot, combining it with the idea of [G'root](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-July/016249.html).
 
 [Read the mailing list post](https://gist.github.com/sipa/ca1502f8465d0d5032d9dd2465f32603)
+
+### BLS Signatures and OWAS (One-way aggregate signatures)
+
+BLS signatures use a different hashing algorithm that hashes directly to a elliptic curve and they use a curve that allows curve pairing, combining two points results in a number. These properties together allow for non-interactive signature aggregation with the resulting signature still taking only 33 bytes of space. Thus BLS signatures would be perfect for highly effective block-wide aggregation. However, the underlying security assumptions are different that what we have in Bitcoin currently and the cryptography is still comparatively novel.
+
+OWAS is a concept for arriving at one signature per block by using BLS signatures described in a paper from 2013 by an anonymous author.
+
+[BLS paper](https://www.iacr.org/archive/asiacrypt2001/22480516.pdf)
+<br />
+[OWAS paper](https://download.wpsoftware.net/bitcoin/wizardry/horasyuanmouton-owas.pdf)
