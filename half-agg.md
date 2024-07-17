@@ -129,8 +129,10 @@ integration into the Bitcoin protocol.
 There are currently three implementations of the half-aggregation
 process available.
 
-[hacspec implementation (reference implementation of the BIP draft)](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master/hacspec-halfagg)
+[hacspec/rust implementation (reference implementation of the BIP draft)](https://github.com/BlockstreamResearch/cross-input-aggregation/tree/master/hacspec-halfagg)
 
-[Implementation included in secp256k1-zkp](https://github.com/BlockstreamResearch/secp256k1-zkp/pull/261)
+[C implementation included in secp256k1-zkp](https://github.com/BlockstreamResearch/secp256k1-zkp/pull/261)
 
 [Implementation in Python based on BIP](https://github.com/fjahr/cisa-playground/blob/main/halfagg.py)
+
+[PR for inclusion in secp256k1](https://github.com/bitcoin-core/secp256k1/pull/1566)
