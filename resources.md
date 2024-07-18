@@ -94,3 +94,7 @@ linked here may have been superseeded by newer research already.
 [Why is adding s values in half aggregation insecure?](https://bitcoin.stackexchange.com/questions/107199/why-is-adding-s-values-in-half-aggregation-insecure)
 
 [How does CoinJoin affect the total transaction size?](https://bitcoin.stackexchange.com/questions/54296/how-does-coinjoin-affect-the-total-transaction-size)
+
+### Scripts and Code
+
+[Savings calculator for the CoinJoin use case by Josie Bake](https://gist.github.com/josibake/336f8f6cfa55edcfcd74b03c32f69847)
