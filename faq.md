@@ -169,14 +169,14 @@ layout: default
 <br><br>
   The witness discount causes witness data, i.e. signatures, to cost less fees than the rest of
   the transaction. The discount thus softens the fee savings effect of CISA. This is also the
-  reason that the space savings of CISA are different from the space savings.
+  reason that the space savings of CISA are different from the fee savings.
 
 <br><br></details>
 
 <details>
   <summary>How problematic would the interactive nature of full aggregate CISA be? What strategies might be adopted to ameliorate this?</summary><br>
 
-  The interactive nature for full signature aggregation is similar to the one in key aggreation
+  The interactive nature for full signature aggregation is similar to the one in key aggregation
   that is more and more widely implemented on top of Taproot. The solution to this is a secure
   signature scheme comparable to the role that MuSig plays for key aggregation. At the time of
   writing this, such a scheme still needs to be developed. After it has been developed it will
@@ -226,7 +226,7 @@ layout: default
   <li>Any wallet can implement CISA to save on fees whenever it is consolidating outputs in one of its transactions</li>
   <li>Service providers like merchants and exchanges that frequently receive and consolidate UTXOs can use CISA to save a lot of fees when using CISA in their consolidation transactions</li>
   <li>PayJoin transactions can profit from fee savings in a similar matter as CoinJoins, even though their savings are smaller since their transactions tend to be a lot smaller with fewer inputs</li>
-  <li>A batching server that batches PBST signed with SINGLE|ANYONECANPAY sig hash could utilize half-aggregation to save fees for its users</li>
+  <li>A batching server that batches PSBT signed with SINGLE|ANYONECANPAY sig hash could utilize half-aggregation to save fees for its users</li>
   </ul>
 
 <br><br></details>
