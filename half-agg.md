@@ -70,12 +70,12 @@ these announcements could be aggregated to save bandwidth.
 
 ### Open issues
 
-#### Adoptor Signatures/Scriptless Scripts and block-wide half-agg (assuming block-wide aggregation)
+#### Adaptor Signatures/Scriptless Scripts and block-wide half-agg (assuming block-wide aggregation)
 
 If you need a refresher: A good definition of Adaptor Signatures is [available
 on the Bitcoin Optech website](https://bitcoinops.org/en/topics/adaptor-signatures/).
 
-When used for block-wide signature aggregation in the naivest way, adoptor
+When used for block-wide signature aggregation in the naivest way, adaptor
 signatures used in transactions in that block would not be usable anymore,
 meaning their secret values could not be retrieved. This could potentially
 break several protocols that are using adaptor signatures today, such as Atomic
@@ -111,7 +111,7 @@ This issue is also [described in a little more detail here](https://github.com/B
 #### Mathematical security proof
 
 While Schnorr signatures are provably secure just in the Random Oracle Model (ROM),
-half-agg require both the ROM and the Algebraic Group Model (AGM). While this
+half-agg requires both the ROM and the Algebraic Group Model (AGM). While this is
 probably not an issue in practice it would be great if AGM was not needed. For now,
 this just means that this would not be as conservative of an update as Schnorr
 signatures themselves.
