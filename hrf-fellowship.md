@@ -4,6 +4,8 @@ layout: hrf
 
 # Cross-Input Signature Aggregation for Bitcoin
 
+by Fabian Jahr
+
 This paper was written under the [HRF CISA Research Fellowship](https://archive.hrf.org/hrfcisaresearchfellowship).
 
 ## Executive Summary
@@ -13,6 +15,12 @@ This paper was written under the [HRF CISA Research Fellowship](https://archive.
 * Businesses can enjoy significant savings particularly for consolidation transactions which should counteract UTXO set growth and speed up adoption by exchanges and ecommerce.
 * There is no singular CISA concept, there are different aggregation modes (full and half aggregation) and scopes (transaction-wide and block-wide) and their trade-offs need to be weighed for an upcoming proposal.
 * CISA requires a soft fork and further cryptographic research is needed for a proposal that maximizes the benefits for the network.
+
+## Acknowledgements
+
+The author would like to thank Jonas Nick and Tim Ruffing for answering questions and providing insights and ideas throughout the authors research journey into CISA. Additional thanks to Alex Gladstein, Christian Keroles and Femi Longe for giving feedback on the content and structure of this report.
+
+The views expressed in this report are those of the author alone and should not be construed as reflecting the opinions or endorsement of those acknowledged.
 
 ## Table of Contents
 
