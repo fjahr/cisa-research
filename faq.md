@@ -45,7 +45,7 @@ layout: default
   <summary>How meaningful might these cost savings be to different industry participants? Given historical precedent, could these cost savings make Taproot the default script type, as Native Segwit is today?</summary><br>
 
   The savings are very meaningful for all industry participants that have to deal with many
-  on-choin transactions on a regular basis, such as merchants and exchanges. A good indication
+  on-chain transactions on a regular basis, such as merchants and exchanges. A good indication
   for this is the number of consolidation transactions that can be observed in a low-fee environment.
   The more consolidation pressure there is, the more fee savings the industry participants can get
   from using CISA with their consolidation transactions.
