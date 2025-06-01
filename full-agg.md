@@ -56,22 +56,13 @@ Existing protocols that want to integrate full-agg signature aggregation will
 need to implement and handle this complexity in the future, including newly
 introduced failure scenarios, privacy implications etc.
 
-To this date no scheme for full-agg has been developed. But such
-a scheme will use similar ideas as MuSig2 and [Bellare-Neven](https://cseweb.ucsd.edu/~mihir/papers/multisignatures.pdf)
-although it is otherwise not related to multisigs.
-
-The following properties are desirable when it comes to a full-agg scheme:
-
-- Provably secure
-- Allow duplicate public keys
-- Does not require proofs-of-possession
-- Works with schemes like Taproot Tweaking and MuSig
-- Two rounds like musig
-- Batch verifiable
-
-To be clear, just on a theoretical level there is not even a paper released
-that tackles these goals. In comparison, half-agg is already much
-further developed in this regard.
+In April of 2025 the [DahLIAS](https://eprint.iacr.org/2025/692.pdf) interactive signature
+scheme has been proposed, which offers a concrete, constant-size full-agg scheme
+compatible with Bitcoin (using Schnorr signatures). It follows a similar shape as MuSig2
+and is provably secure in
+the random-oracle model (under the algebraic one-more discrete logarithm assumption). It
+uses two rounds, the first of which can be preprocessed, and allows for key tweaking as
+well.
 
 #### Common-input-ownership heuristic (assuming tx-wide aggregation)
 
@@ -87,4 +78,4 @@ No BIP has been drafted publicly to this date.
 
 ### Code
 
-No implementation as code is currently known.
+[PoC Python implementation of DahLIAS scheme](https://github.com/fjahr/cisa-playground/blob/main/fullagg.py)

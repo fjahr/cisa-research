@@ -25,7 +25,7 @@ or a PR on [GitHub](https://github.com/fjahr/cisa-research)!
 
 ### Full-agg
 
-- Develop an interactive signature scheme compatible with Bitcoin that is provably secure
+- Review DahLIAS, the proposal for an interactive signature scheme that is compatible with full-agg
 - Draft a BIP
 - Draft an implementation
 

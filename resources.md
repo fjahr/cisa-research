@@ -33,6 +33,8 @@ linked here may have been superseeded by newer research already.
 
 ### Academic Papers
 
+[2025-04-16 - DahLIAS: Discrete Logarithm-Based Interactive Aggregate Signatures (Jonas Nick, Tim Ruffing & Yannick Seurin)](https://eprint.iacr.org/2025/692.pdf)
+
 [2022-02-25 - Half-Aggregation of Schnorr Signatures with Tight Reductions (Yanbo Chen & Yunlei Zhao)](https://eprint.iacr.org/2022/222)
 
 [2021-03-22 - Non-interactive half-aggregation of EdDSA and variants of Schnorr signatures (Konstantinos Chalkias, Francois Garillot, Yashvanth Kondi & Valeria Nikolaenko)](https://eprint.iacr.org/2021/350)
