@@ -79,3 +79,5 @@ No BIP has been drafted publicly to this date.
 ### Code
 
 [PoC Python implementation of DahLIAS scheme](https://github.com/fjahr/cisa-playground/blob/main/fullagg.py)
+[PoC Rust implementation of DahLIAS scheme](https://github.com/arminsabouri/rust-cisa-playground)
+
